@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumen</title>
+    <link rel="stylesheet" href="estail.css">
 </head>
 <body>
     <h1>Tu paquete ha sido generado con exito!</h1>
     <hr>
     <h3>RESUMEN:</h3>
+    <p class="resumen">
     <?php
         echo "Datos:" . "<br>";
         $n=$_POST['nombre'];
@@ -30,5 +32,6 @@
             echo $s . "<br>";
         }
     ?>
+    </p>
 </body>
 </html>

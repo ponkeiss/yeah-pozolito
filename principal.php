@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paquete turistico</title>
+    <link rel="stylesheet" href="estail.css">
 </head>
 <body>
+    <br>
     <form action="resultados.php" method="POST">
         <!-- Parte a -->
-        <h2>Destinos turisticos</h2><br>
-        <select class="destinos" id="destinos" name="destinos[] " multiple>
+        <h2>Destinos turisticos</h2>
+        <p class="p">
+        <select id="destinos" name="destinos[] " multiple>
             <option value="Cancun">Cancún</option>
             <option value="Puerto Vallarta">Puerto Vallarta</option>
             <option value="Acapulco">Acapulco</option>
@@ -17,9 +20,11 @@
             <option value="Mazatlan">Mazatlán</option>
             <option value="Huatulco">Huatulco</option>
             <option value="Puerto Escondido">Puerto Escondido</option>
-        </select><br><br>
+        </select><br>
+        </p>
         <!-- Parte b -->
         <h2>Actividades turisticas:</h2>
+        <p class="p">
         <label for="opcion-1">
             <input type="checkbox" value="buceo" id="act-1" name="actividades[]">
             Buceo
@@ -48,9 +53,11 @@
             <input type="checkbox" value="Visita a museos" id="act-7" name="actividades[]">
             Visita a museos
         </label><br>
-        <br><br>
+        <br>
+        </p>
         <!-- Parte c -->
         <h2>Servicios adicionales:</h2>
+        <p class="p">
         <label for="opcion-1">
             <input type="checkbox" value="Transporte  al aeropuerto" id="ser-1" name="servicios[]">
             Transporte al aeropuerto
@@ -75,9 +82,11 @@
             <input type="checkbox" value="Guía turístico" id="ser-6" name="servicios[]">
             Guía turístico
         </label><br>
-        <br><br>
+        <br>
+        </p>
         <!-- parte d -->
          <h2>Datos del cliente:</h2>
+         <p class="p">
         <label for="nombre">Nombre completo:</label>
         <input type="text" step="any" name="nombre" id="nombre" required>
         <br><br>
@@ -85,6 +94,8 @@
         <input type="email" step="any" name="correo" id="correo" required>
         <br><br>
         <button type="submit">Generar Paquete</button>
+        <br><br>
+        </p>
     </form>
 </body>
 </html>
