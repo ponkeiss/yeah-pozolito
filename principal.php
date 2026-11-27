@@ -8,11 +8,16 @@
 </head>
 <body>
     <br>
+    <?php
+        if (isset($_GET['error']) && $_GET['error'] == 1) {
+            echo "<p style='color:red;'>No seleccionaste ningún elemento de alguna categoria, vuelve a intentarlo.</p>";
+        }
+    ?>
     <form action="resultados.php" method="POST">
         <!-- Parte a -->
         <h2>Destinos turisticos</h2>
         <p class="p">
-        <select id="destinos" name="destinos[] " multiple>
+        <select id="destinos" name="destinos[]" multiple>
             <option value="Cancun">Cancún</option>
             <option value="Puerto Vallarta">Puerto Vallarta</option>
             <option value="Acapulco">Acapulco</option>
